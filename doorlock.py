@@ -1,4 +1,4 @@
-#!/home/pi/OpenCV-master-py3/bin/python3
+#!/usr/bin/python3
 import cv2
 import numpy as np
 import face_recognition as fr

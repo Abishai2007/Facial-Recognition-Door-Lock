@@ -8,7 +8,7 @@
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
 # Short-Description: Doorlock function using rpi camera
-# Description:       Doolock
+# Description:       Doorlock
 ### END INIT INFO
 
 # If you want a command to always run, put it here
