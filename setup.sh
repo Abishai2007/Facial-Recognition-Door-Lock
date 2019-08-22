@@ -1,9 +1,9 @@
 sudo apt-get update
 sudo apt-get upgrade -y
-sudo pip3 install opencv-python sanic asyncio numpy json
+sudo pip3 install sanic asyncio numpy json
 
-sudo sed -i 's/SWAPSIZE=.*$/SWAPSIZE=1024/g' /etc/dphys-swapfile
-sudo /etc/init.d/dphys-swapfile restart
+#sudo sed -i 's/SWAPSIZE=.*$/SWAPSIZE=1024/g' /etc/dphys-swapfile
+#sudo /etc/init.d/dphys-swapfile restart
 
 sudo pip3 install face-recognition
 
