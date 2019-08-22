@@ -1,4 +1,4 @@
-#!/usr/bin/python3.7
+#!/home/pi/OpenCV-master-py3/bin
 import cv2
 import numpy as np
 import face_recognition as fr
@@ -50,7 +50,7 @@ async def allowed(request):
 			return sanic_response.text('wrong data')
 
 		return sanic_response.text(identifier.toggleAccess(uid))
-	
+
 	return sanic_response.text('must use POST request')
 
 # delete users
@@ -82,7 +82,7 @@ async def set(request):
 		return sanic_response.text('need name')
 
 	identifier.setName(data['uid'], data['name'])
-		
+
 	return sanic_response.text('ok')
 
 # mainview image stream
@@ -101,8 +101,6 @@ async def server_stop(app, loop):
 
 
 if __name__ == "__main__":
-	
+
 	app.static('/','./index')
 	app.run( host='0.0.0.0', port='80')
-
-
